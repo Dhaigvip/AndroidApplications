@@ -1,0 +1,331 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2015-present, Parse, LLC.
+4  ~ All rights reserved.
+5  ~
+6  ~ This source code is licensed under the BSD-style license found in the
+7  ~ LICENSE file in the root directory of this source tree. An additional grant
+8  ~ of patent rights can be found in the PATENTS file in the same directory.
+9-->
+10<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+11    package="com.parse.starter"
+12    android:versionCode="1"
+13    android:versionName="1.0" >
+14
+15    <uses-sdk
+16        android:minSdkVersion="26"
+16-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml
+17        android:targetSdkVersion="26" />
+17-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:12:5-67
+19-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:12:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:13:5-79
+20-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:13:22-76
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:14:5-80
+21-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:14:22-77
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:16:5-79
+22-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:16:22-76
+23
+24    <!-- Optional permission for Analytics to run. -->
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
+25-->[com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\abcb3f0f51ba972b1f81403e966d7e5f\play-services-analytics-9.4.0\AndroidManifest.xml:25:5-67
+25-->[com.google.android.gms:play-services-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\abcb3f0f51ba972b1f81403e966d7e5f\play-services-analytics-9.4.0\AndroidManifest.xml:25:22-65
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d090ae323b8b46a2a3afa5f398768601\play-services-gcm-9.4.0\AndroidManifest.xml:21:5-82
+26-->[com.google.android.gms:play-services-gcm:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d090ae323b8b46a2a3afa5f398768601\play-services-gcm-9.4.0\AndroidManifest.xml:21:22-79
+27
+28    <uses-feature
+28-->[com.google.android.gms:play-services-maps:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e03cd47af4cce20edf6c476b71a8235f\play-services-maps-9.4.0\AndroidManifest.xml:22:5-24:33
+29        android:glEsVersion="0x00020000"
+29-->[com.google.android.gms:play-services-maps:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e03cd47af4cce20edf6c476b71a8235f\play-services-maps-9.4.0\AndroidManifest.xml:23:8-40
+30        android:required="true" />
+30-->[com.google.android.gms:play-services-maps:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e03cd47af4cce20edf6c476b71a8235f\play-services-maps-9.4.0\AndroidManifest.xml:24:8-31
+31
+32    <permission
+32-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:25:5-26:47
+33        android:name="com.parse.starter.permission.C2D_MESSAGE"
+33-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:25:17-71
+34        android:protectionLevel="signature" />
+34-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:26:9-44
+35
+36    <uses-permission android:name="com.parse.starter.permission.C2D_MESSAGE" />
+36-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:28:5-79
+36-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:28:22-76
+37
+38    <application
+38-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:18:5-36:19
+39        android:name="com.parse.starter.StarterApplication"
+39-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:19:9-43
+40        android:allowBackup="true"
+40-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:20:9-35
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:icon="@mipmap/ic_launcher"
+43-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:21:9-43
+44        android:label="@string/app_name"
+44-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:22:9-41
+45        android:testOnly="true"
+46        android:theme="@style/AppTheme" >
+46-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:23:9-40
+47        <activity
+47-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:25:9-33:20
+48            android:name="com.parse.starter.MainActivity"
+48-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:26:13-41
+49            android:label="@string/app_name" >
+49-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:27:13-45
+50            <intent-filter>
+50-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:28:13-32:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:29:17-69
+51-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:29:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:31:17-77
+53-->C:\Android\Parse-Server-Starter-Project\ParseStarterProject\src\main\AndroidManifest.xml:31:27-74
+54            </intent-filter>
+55        </activity>
+56
+57        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+57-->[com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1ce4c23fdb8dede85e65923ebdcf1680\play-services-cast-framework-9.4.0\AndroidManifest.xml:6:9-100
+57-->[com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1ce4c23fdb8dede85e65923ebdcf1680\play-services-cast-framework-9.4.0\AndroidManifest.xml:6:19-97
+58
+59        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+59-->[com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1ce4c23fdb8dede85e65923ebdcf1680\play-services-cast-framework-9.4.0\AndroidManifest.xml:7:9-104
+59-->[com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1ce4c23fdb8dede85e65923ebdcf1680\play-services-cast-framework-9.4.0\AndroidManifest.xml:7:18-101
+60        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+60-->[com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1ce4c23fdb8dede85e65923ebdcf1680\play-services-cast-framework-9.4.0\AndroidManifest.xml:8:9-92
+60-->[com.google.android.gms:play-services-cast-framework:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1ce4c23fdb8dede85e65923ebdcf1680\play-services-cast-framework-9.4.0\AndroidManifest.xml:8:18-90
+61
+62        <meta-data
+62-->[com.android.support:appcompat-v7:26.0.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\a55b8e82c5e01e847d73fa75d178eb7d\appcompat-v7-26.0.0\AndroidManifest.xml:26:9-28:38
+63            android:name="android.support.VERSION"
+63-->[com.android.support:appcompat-v7:26.0.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\a55b8e82c5e01e847d73fa75d178eb7d\appcompat-v7-26.0.0\AndroidManifest.xml:27:13-51
+64            android:value="26.0.0" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+64-->[com.android.support:appcompat-v7:26.0.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\a55b8e82c5e01e847d73fa75d178eb7d\appcompat-v7-26.0.0\AndroidManifest.xml:28:13-35
+65        <activity
+65-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:26:9-29:64
+66            android:name="com.google.android.gms.ads.AdActivity"
+66-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:27:13-65
+67            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+67-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:28:13-122
+68            android:theme="@android:style/Theme.Translucent" />
+68-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:29:13-61
+69        <activity
+69-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:30:9-31:52
+70            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+70-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:30:19-91
+71            android:theme="@style/Theme.IAPTheme" />
+71-->[com.google.android.gms:play-services-ads-lite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\359af94d9647b74cc65847d03101711c\play-services-ads-lite-9.4.0\AndroidManifest.xml:31:13-50
+72        <activity
+72-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:21:9-29:20
+73            android:name="com.google.android.gms.appinvite.PreviewActivity"
+73-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:22:17-48
+74            android:exported="true"
+74-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:23:17-40
+75            android:theme="@style/Theme.AppInvite.Preview" >
+75-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:24:17-63
+76            <intent-filter>
+76-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:25:13-28:29
+77                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+77-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:26:17-89
+77-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:26:25-87
+78
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:27:17-75
+79-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:27:27-73
+80            </intent-filter>
+81        </activity>
+82        <activity
+82-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:21:9-24:46
+83            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+83-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:21:19-68
+84            android:excludeFromRecents="true"
+84-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:23:19-52
+85            android:exported="false"
+85-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:24:19-43
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+86-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:22:19-78
+87        <!--
+88Service handling Google Sign-In user revocation. For apps that do not integrate with
+89            Google Sign-In, this service will never be started.
+90        -->
+91        <service
+91-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:28:9-31:110
+92            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+92-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:29:13-58
+93            android:exported="true"
+93-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:30:13-36
+94            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+94-->[com.google.android.gms:play-services-auth:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\291494c9f55c4746f086eae9c6c2a1e6\play-services-auth-9.4.0\AndroidManifest.xml:31:13-107
+95        <service
+95-->[com.google.firebase:firebase-crash:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e8ab28a9a88f3ba74eb20d28b900a351\firebase-crash-9.4.0\AndroidManifest.xml:26:9-27:50
+96            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+96-->[com.google.firebase:firebase-crash:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e8ab28a9a88f3ba74eb20d28b900a351\firebase-crash-9.4.0\AndroidManifest.xml:26:18-79
+97            android:process=":background_crash" />
+97-->[com.google.firebase:firebase-crash:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e8ab28a9a88f3ba74eb20d28b900a351\firebase-crash-9.4.0\AndroidManifest.xml:27:13-48
+98        <service
+98-->[com.google.firebase:firebase-crash:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e8ab28a9a88f3ba74eb20d28b900a351\firebase-crash-9.4.0\AndroidManifest.xml:29:9-30:50
+99            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+99-->[com.google.firebase:firebase-crash:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e8ab28a9a88f3ba74eb20d28b900a351\firebase-crash-9.4.0\AndroidManifest.xml:29:18-77
+100            android:process=":background_crash" />
+100-->[com.google.firebase:firebase-crash:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\e8ab28a9a88f3ba74eb20d28b900a351\firebase-crash-9.4.0\AndroidManifest.xml:30:13-48
+101
+102        <activity
+102-->[com.google.android.gms:play-services-base:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\da234a79df00587820cbb47e1bf526c6\play-services-base-9.4.0\AndroidManifest.xml:20:9-22:45
+103            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+103-->[com.google.android.gms:play-services-base:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\da234a79df00587820cbb47e1bf526c6\play-services-base-9.4.0\AndroidManifest.xml:20:19-85
+104            android:exported="false"
+104-->[com.google.android.gms:play-services-base:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\da234a79df00587820cbb47e1bf526c6\play-services-base-9.4.0\AndroidManifest.xml:22:19-43
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.android.gms:play-services-base:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\da234a79df00587820cbb47e1bf526c6\play-services-base-9.4.0\AndroidManifest.xml:21:19-78
+106        <!--
+107 FirebaseMessagingService performs security checks at runtime,
+108             no need for explicit permissions despite exported="true"
+109        -->
+110        <service
+110-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:24:9-30:19
+111            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+111-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:25:13-82
+112            android:exported="true" >
+112-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:26:13-36
+113            <intent-filter android:priority="-500" >
+113-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:27:13-29:29
+113-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:27:28-51
+114                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+114-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:28:17-78
+114-->[com.google.firebase:firebase-messaging:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\1b33c025b6a0e47556f49044e9ba7335\firebase-messaging-9.4.0\AndroidManifest.xml:28:25-75
+115            </intent-filter>
+116        </service>
+117        <service
+117-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:25:9-27:42
+118            android:name="com.google.android.gms.tagmanager.TagManagerService"
+118-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:25:18-84
+119            android:enabled="true"
+119-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:27:17-39
+120            android:exported="false" />
+120-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:26:17-41
+121
+122        <activity
+122-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:28:9-37:20
+123            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+123-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:29:13-87
+124            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+124-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:30:13-37
+125            <intent-filter>
+125-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:31:13-36:29
+126                <data android:scheme="tagmanager.c.com.parse.starter" />
+126-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:32:17-72
+126-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:32:23-69
+127
+128                <action android:name="android.intent.action.VIEW" />
+128-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:33:17-69
+128-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:33:25-66
+129
+130                <category android:name="android.intent.category.DEFAULT" />
+130-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:27:17-75
+130-->[com.google.android.gms:play-services-appinvite:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\dca3ccf5bc342c195d28857570529356\play-services-appinvite-9.4.0\AndroidManifest.xml:27:27-73
+131                <category android:name="android.intent.category.BROWSABLE" />
+131-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:35:17-77
+131-->[com.google.android.gms:play-services-tagmanager-api:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\d590cf820dc143bdd61e701eb249249d\play-services-tagmanager-api-9.4.0\AndroidManifest.xml:35:27-75
+132            </intent-filter>
+133        </activity>
+134
+135        <receiver
+135-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:28:7-34:18
+136            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+136-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:29:11-83
+137            android:enabled="true" >
+137-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:30:11-33
+138            <intent-filter>
+138-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:31:9-33:25
+139                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+139-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:32:11-77
+139-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:32:19-75
+140            </intent-filter>
+141        </receiver>
+142
+143        <service
+143-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:36:7-39:37
+144            android:name="com.google.android.gms.measurement.AppMeasurementService"
+144-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:37:11-82
+145            android:enabled="true"
+145-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:38:11-33
+146            android:exported="false" />
+146-->[com.google.firebase:firebase-analytics:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\42cccc7cfdc96ada6c51af387d1c18ef\firebase-analytics-9.4.0\AndroidManifest.xml:39:11-35
+147
+148        <receiver
+148-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:32:9-41:20
+149            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+149-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:33:13-78
+150            android:exported="true"
+150-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:34:13-36
+151            android:permission="com.google.android.c2dm.permission.SEND" >
+151-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:35:13-73
+152            <intent-filter>
+152-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:36:13-40:29
+153                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+153-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:37:17-81
+153-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:37:25-78
+154                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+154-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:38:17-86
+154-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:38:25-83
+155
+156                <category android:name="com.parse.starter" />
+156-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:39:17-61
+156-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:39:27-58
+157            </intent-filter>
+158        </receiver>
+159        <!--
+160 Internal (not exported) receiver used by the app to start its own exported services
+161             without risk of being spoofed.
+162        -->
+163        <receiver
+163-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:45:9-47:40
+164            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+164-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:46:13-86
+165            android:exported="false" />
+165-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:47:13-37
+166        <!--
+167 FirebaseInstanceIdService performs security checks at runtime,
+168             no need for explicit permissions despite exported="true"
+169        -->
+170        <service
+170-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:51:9-57:19
+171            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+171-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:52:13-77
+172            android:exported="true" >
+172-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:53:13-36
+173            <intent-filter android:priority="-500" >
+173-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:54:13-56:29
+173-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:54:28-51
+174                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+174-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:55:17-80
+174-->[com.google.firebase:firebase-iid:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\c9115e0d17b63814f16226b126cdfb84\firebase-iid-9.4.0\AndroidManifest.xml:55:25-77
+175            </intent-filter>
+176        </service>
+177
+178        <provider
+178-->[com.google.firebase:firebase-common:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\77265dae7f5271f74cebafb4b37fe271\firebase-common-9.4.0\AndroidManifest.xml:7:9-11:39
+179            android:name="com.google.firebase.provider.FirebaseInitProvider"
+179-->[com.google.firebase:firebase-common:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\77265dae7f5271f74cebafb4b37fe271\firebase-common-9.4.0\AndroidManifest.xml:9:13-58
+180            android:authorities="com.parse.starter.firebaseinitprovider"
+180-->[com.google.firebase:firebase-common:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\77265dae7f5271f74cebafb4b37fe271\firebase-common-9.4.0\AndroidManifest.xml:8:13-72
+181            android:exported="false"
+181-->[com.google.firebase:firebase-common:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\77265dae7f5271f74cebafb4b37fe271\firebase-common-9.4.0\AndroidManifest.xml:10:13-37
+182            android:initOrder="100" />
+182-->[com.google.firebase:firebase-common:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\77265dae7f5271f74cebafb4b37fe271\firebase-common-9.4.0\AndroidManifest.xml:11:13-36
+183
+184        <meta-data
+184-->[com.google.android.gms:play-services-basement:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\29bcee06c8d14112753b7c986c3a1450\play-services-basement-9.4.0\AndroidManifest.xml:21:9-23:69
+185            android:name="com.google.android.gms.version"
+185-->[com.google.android.gms:play-services-basement:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\29bcee06c8d14112753b7c986c3a1450\play-services-basement-9.4.0\AndroidManifest.xml:22:13-58
+186            android:value="@integer/google_play_services_version" />
+186-->[com.google.android.gms:play-services-basement:9.4.0] C:\Users\Vipul\.gradle\caches\transforms-2\files-2.1\29bcee06c8d14112753b7c986c3a1450\play-services-basement-9.4.0\AndroidManifest.xml:23:13-66
+187    </application>
+188
+189</manifest>
