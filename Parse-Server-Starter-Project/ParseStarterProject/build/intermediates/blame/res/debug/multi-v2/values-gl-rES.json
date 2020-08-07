@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Android\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl-rES\\values-gl-rES.xml",
+            "outputFile": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl-rES\\values-gl-rES.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Vipul\\.gradle\\caches\\transforms-2\\files-2.1\\caa04464304b8265e2847c3bdaa65007\\mediarouter-v7-23.0.0\\res\\values-gl-rES\\values-gl-rES.xml",

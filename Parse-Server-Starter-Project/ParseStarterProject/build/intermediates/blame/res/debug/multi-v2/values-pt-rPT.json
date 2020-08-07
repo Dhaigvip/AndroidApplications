@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Android\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Vipul\\.gradle\\caches\\transforms-2\\files-2.1\\da234a79df00587820cbb47e1bf526c6\\play-services-base-9.4.0\\res\\values-pt-rPT\\values.xml",

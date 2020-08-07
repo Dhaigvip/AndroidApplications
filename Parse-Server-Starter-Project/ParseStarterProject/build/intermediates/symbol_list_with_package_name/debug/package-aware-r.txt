@@ -1021,6 +1021,7 @@ id async
 id audio_empty_message
 id audio_list_view
 id auto
+id backgroundLayout
 id background_image_view
 id background_place_holder_image_view
 id barrier
@@ -1128,6 +1129,7 @@ id listMode
 id list_item
 id loading_indicator
 id logo_only
+id lstUsersList
 id main_container
 id match_global_nicknames
 id match_parent
@@ -1284,6 +1286,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout activity_main
+layout activity_users_list
 layout cast_expanded_controller_activity
 layout cast_help_text
 layout cast_intro_overlay

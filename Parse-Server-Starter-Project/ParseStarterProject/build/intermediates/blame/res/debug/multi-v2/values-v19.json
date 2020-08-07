@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Android\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "outputFile": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Vipul\\.gradle\\caches\\transforms-2\\files-2.1\\1ce4c23fdb8dede85e65923ebdcf1680\\play-services-cast-framework-9.4.0\\res\\values-v19\\values.xml",

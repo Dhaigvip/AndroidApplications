@@ -12,9 +12,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,9 +33,19 @@ import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
     public boolean signUpModeActive = true;
     TextView loginText;
+    EditText userName;
+    EditText password;
+
+    @Override
+    public boolean onKey(View view, int i, KeyEvent keyEvent) {
+        if (i == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == KeyEvent.ACTION_DOWN) {
+            SignUpClicked(view);
+        }
+        return false;
+    }
 
     @Override
     public void onClick(View view) {
@@ -46,14 +60,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 btn.setText("Sign up");
                 loginText.setText("or, Login");
             }
+        } else if (view.getId() == R.id.imgLogo || view.getId() == R.id.backgroundLayout) {
+            //Hides the soft keyboard on click
+            InputMethodManager inputManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+            inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
         }
     }
 
     public void SignUpClicked(View view) {
-
-        EditText userName = (EditText) findViewById(R.id.txtUserName);
-        EditText password = (EditText) findViewById(R.id.txtPassword);
-
         if (userName.getText().toString().matches("") || password.getText().toString().matches("")) {
             Toast.makeText(this, "User name and password are required!", Toast.LENGTH_LONG).show();
         } else {
@@ -67,16 +81,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void done(ParseException e) {
                         if (e == null) {
                             Log.i("SignUp", "Success");
-                        } else {
+                            ShowUserList();
+                        } else
                             Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
-                        }
                     }
                 });
             } else {
                 //Login
-                ParseUser.logInInBackground(userName.getText().toString(), password.getText().toString());
+                ParseUser.logInInBackground(userName.getText().toString(), password.getText().toString(), new LogInCallback() {
+                    @Override
+                    public void done(ParseUser user, ParseException e) {
+                        if (user != null) {
+                            ShowUserList();
+                            Log.i("Login", "Sucees");
+                        } else
+                            Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
             }
         }
+    }
+
+    public void ShowUserList() {
+        Intent intent = new Intent(getApplicationContext(), UsersListActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -84,9 +112,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loginText = (TextView) findViewById(R.id.txtLoginText);
+        userName = findViewById(R.id.txtUserName);
+        password = findViewById(R.id.txtPassword);
+        ImageView logo = findViewById(R.id.imgLogo);
+        RelativeLayout layout = findViewById(R.id.backgroundLayout);
+        loginText = findViewById(R.id.txtLoginText);
+
+        //Connect these control with OnClick implemented by this class.
         loginText.setOnClickListener(this);
+        logo.setOnClickListener(this);
+        layout.setOnClickListener(this);
+
+        //Connect password control with OnKey implemented by this class.
+        password.setOnKeyListener(this);
+        if (ParseUser.getCurrentUser() != null) {
+            ShowUserList();
+        }
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
+
 }
