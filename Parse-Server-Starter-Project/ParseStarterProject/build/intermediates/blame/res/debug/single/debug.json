@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\menu_share_menu.xml.flat",
+        "source": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\src\\main\\res\\menu\\share_menu.xml"
+    },
+    {
         "merged": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable_instagram256.png.flat",
         "source": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\src\\main\\res\\drawable\\instagram256.png"
+    },
+    {
+        "merged": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_feed.xml.flat",
+        "source": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\src\\main\\res\\layout\\activity_user_feed.xml"
     },
     {
         "merged": "C:\\Android\\AndroidApplications\\Parse-Server-Starter-Project\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
